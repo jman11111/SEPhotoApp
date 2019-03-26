@@ -22,6 +22,10 @@ and would hopefully help the lesser known/smaller companies that produce candies
 No references at this point in time, but will likely look up styling guide for UI.
 
 ### Overall Description:
+(The product Sweets is a web app meant to connect people and potential candies they may like, using a database 
+and tagging system. The objective is to make an app that someone who has a craving for candy can use to state 
+it in the most effective way. This app would very obviously boost candy sales of all kinds if successful,
+and would hopefully help the lesser known/smaller companies that produce candies get some business.)
 
 ### Product Perspective:
 This is a new self contained product born from my personal desire to find new candies when I occasionally
@@ -32,11 +36,11 @@ feel the want for one.
 * A tagging system for finding candies based on characteristics you already like.
 * An allergy option to potentially avoid returning candies a user cannot eat in a search.
 * Database holding candies and their tags, as well as link to where they can be ordered.
-* User profiles for the purpose of saving preferences/favoriting candies
+* User profiles for the purpose of saving preferences/favoriting candies.
 
 ### User Classes and Characteristics:
-**Admin:** People who manage the database to maintain accuracy, as well as user info
-**User:** People who use the app in hopes of finding a candy that they would like
+**Admin:** People who manage the database to maintain accuracy, as well as user info.
+**User:** People who use the app in hopes of finding a candy that they would like.
 
 ### Operating Environment:
 The Environment will initially be on desktop computers/laptops, then will be developed into a mobile app
@@ -61,7 +65,7 @@ have a basic amount of candies to choose from
 ### External Interface Requirements:
 
 ### User Interfaces:
-Mockups are in a separate document
+Mockups made with AdobeXD will be separate from this document. 
 
 ### Hardware Interfaces:
 The Hardware used will be a server machine (most likely a desktop) to host the website, as well as the
