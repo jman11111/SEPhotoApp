@@ -109,4 +109,18 @@ Sweets should have a database that holds candies, their tags, as well as links t
 The user should have an option on either all screens or the home screen to access their profile in order to view their history, change their account info, or change dietary restrictions. 
 ### Functional Requirements
 
-## 
+## Other Non-functional Requirements
+### Performance Requirements
+The search function should use lists and arraylists to return the users choice of candy as quickly as possible.
+### Safety Requirements
+Users should be mindful of the ingredients of the candies they are purchasing to make sure there are no problems regarding any dietary resstrictions they may have. Users should also be cautious when consuming candy as this can be a choking hazard.
+### Security Requirements
+User profiles would need to be encrypted to ensure privacy, users will have a list of security questions to chose one from that will be chosen when their profile is setup. Users will also be able to request password and username recovery in the event that they have forgotten either.
+
+## Software Quality Attributes
+## Business Rules
+
+# Other Requirements
+## Appendix A: Glossary
+## Appendix B: Analysis Models
+## Appendix C: To Be Determined List
