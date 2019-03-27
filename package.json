@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "apollo-server-express": "^2.4.8",
+    "express": "^4.16.4",
+    "graphql": "^14.2.0",
+    "graphql-import": "^0.7.1",
+    "mongoose": "^5.4.20"
+  }
+}
