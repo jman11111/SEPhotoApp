@@ -81,32 +81,32 @@ This software will use HTTP for requests to the database, as well as connection 
 
 ## System Features
 
-#### Search Bar
-**Description and Priority**
+## Search Bar
+### Description and Priority
 The software should have a search bar to allow users to search for specific candy names. Priority: 8
-**Stimulus/Response Sequences**
+### Stimulus/Response Sequences
 The user should have the option to search for candies presented to them as either a search bar or a separate page accessible from a feature list
-**Functional Requirements**
+### Functional Requirements
 
 ## Tagging System
-**Description and Priority**
+### Description and Priority
 The software should have atagging system to allow users to discover new candies based on their preferences. Priority: 4
-**Stimulus/Response Sequences**
+### Stimulus/Response Sequences
 The user should see tags located under the candies to which they are attributed, the users should have the option to search all candies with same tag by clicking on one.
-**Functional Requirements**
+### Functional Requirements
 
 ## Allergy
-**Description and Priority**
+### Description and Priority
 The software should have an allergy option to ensure users are able to enforce any dietary restrictions they may have. Priority: 7
-**Stimulus/Response Sequences**
+### Stimulus/Response Sequences
 The user should have a section to either input their dietary restrictions upon sign-up or the user should have an option to toggle certain foods off the search
-**Functional Requirements**
+### Functional Requirements
 
 ## Database for Candies
-**Description and Priority**
+### Description and Priority
 Sweets should have a database that holds candies, their tags, as well as links to where they can be ordered. Priority: 9
-**Stimulus/Response Sequences**
+### Stimulus/Response Sequences
 The user should have an option on either all screens or the home screen to access their profile in order to view their history, change their account info, or change dietary restrictions. 
-**Functional Requirements**
+### Functional Requirements
 
 ## 
