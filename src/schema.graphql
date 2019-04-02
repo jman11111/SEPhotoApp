@@ -1,6 +1,6 @@
 type Query {
     findCandy(cname: String!): [Candy]
-    findUser(username: Srting!): User
+    findUser(username: String!): User
     findCandybyTag(tag: String!): [Candy]
 },
 type Candy {
@@ -28,7 +28,7 @@ type User {
 type Mutation {
     signUp(email: String!,password: String!): LoginPayload!,
     login(email: String!, password: String!): LoginPayload!,
-    updateUser(id: ID, email: String, password: String, allergy: String, favorites: Candy): AccountPayload!,
+    updateUser(id: ID, email: String, password: String, allergy: String, favorites: String): AccountPayload!,
     deleteUser(id: ID!): String!,
     addCandy(name: String, tags: [String], links: [String]): Candy,
     updateCandy(id: ID, name: String, tags: [String], links: [String]): Candy,

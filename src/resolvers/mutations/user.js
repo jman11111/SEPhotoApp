@@ -1,7 +1,7 @@
 var userModel = require('../../models/user')
 
 var signUp = async(parent,args) => {
-    var newUser = new userModel({ email: '', password: '',allergies: ['',''], favorites: []});
+    var newUser = new userModel({ email: '', password: '',allergies: ['',''], favorites: ['','']});
     newUser.uid = newUser._id;
     newUser.email = args.email;
     newUser.password = args.password; 
