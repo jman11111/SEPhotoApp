@@ -11,7 +11,8 @@ type Candy {
     links: [String]
 },
 type LoginPayload{
-    email: String
+    email: String,
+    success: String
 },
 type AccountPayload{
     user: User
@@ -27,9 +28,9 @@ type User {
 type Mutation {
     signUp(email: String!,password: String!): LoginPayload!,
     login(email: String!, password: String!): LoginPayload!,
-    updateUser(email: String, password: String, allergy: String, favorites: Candy): AccountPayload!,
-    deletedUser(email: String!): String!,
+    updateUser(id: ID, email: String, password: String, allergy: String, favorites: Candy): AccountPayload!,
+    deleteUser(id: ID!): String!,
     addCandy(name: String, tags: [String], links: [String]): Candy,
-    updateCandy(name: String, tags: [String], links: [String]): Candy,
-    deleteCandy(name: String!): String!
+    updateCandy(id: ID, name: String, tags: [String], links: [String]): Candy,
+    deleteCandy(id: ID!): String!
 }

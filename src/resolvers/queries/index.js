@@ -1,8 +1,10 @@
-/*var signUpfunc = require('./user.js').signUpex
-var loginfunc = require('./user.js').loginex
+var findUserfunc = require('./user.js').findUser
+var findCandyfunc = require('./candy.js').findCandy
+var findCandybyTagfunc = require('./candy.js').findCandybyTag
 
 
 module.exports =  {
-    signUp: signUpfunc,
-    login: loginfunc
-}*/
+    findUser: findUserfunc,
+    findCandy: findCandyfunc,
+    findCandybyTag: findCandybyTagfunc
+}
