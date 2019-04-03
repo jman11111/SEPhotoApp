@@ -1,7 +1,7 @@
 var candyModel = require('../../models/candy')
 
 addCandy = async(parent,args) => {
-    var newCandy = new candyModel({name: "", tags: ['',''], links: ['','']});
+    var newCandy = new candyModel({cid: "", name: "", tags: ['',''], links: ['','']});
     newCandy.cid = newCandy._id;
     newCandy.name = args.name;
     newCandy.tags = args.tags; 
@@ -16,10 +16,16 @@ addCandy = async(parent,args) => {
 }
 
 updateCandy = async(parent,args) => {
-    updateCandy = await candyModel.findOne({ cid: args.id}, function (err, doc){
+    updateCandy = await candyModel.findById(args.id, function (err, doc){
+        if(args.name != null){
         doc.name = args.name;
+        }
+        if(args.tags != null){
         doc.tags = args.tags;
+        }
+        if(args.links != null){
         doc.links = args.links;
+        }
         doc.save();
     });
     return {

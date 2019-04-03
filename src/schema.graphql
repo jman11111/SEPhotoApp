@@ -31,6 +31,6 @@ type Mutation {
     updateUser(id: ID, email: String, password: String, allergy: String, favorites: String): AccountPayload!,
     deleteUser(id: ID!): String!,
     addCandy(name: String, tags: [String], links: [String]): Candy,
-    updateCandy(id: ID, name: String, tags: [String], links: [String]): Candy,
+    updateCandy(id: ID!, name: String, tags: [String], links: [String]): Candy,
     deleteCandy(id: ID!): String!
 }
