@@ -1,0 +1,36 @@
+type Query {
+    findCandy(cname: String!): [Candy]
+    findUser(username: String!): User
+    findCandybyTag(tag: String!): [Candy]
+},
+type Candy {
+    "Main objects of database, holds candy data"
+    cid: ID,
+    name: String,
+    tags: [String],
+    links: [String]
+},
+type LoginPayload{
+    email: String,
+    success: String
+},
+type AccountPayload{
+    user: User
+},
+type User {
+    "user info"
+    uid: ID,
+    email: String!,
+    password: String!,
+    allergies: [String],
+    favorites: [Candy]
+},
+type Mutation {
+    signUp(email: String!,password: String!): LoginPayload!,
+    login(email: String!, password: String!): LoginPayload!,
+    updateUser(id: ID, email: String, password: String, allergy: String, favorites: String): AccountPayload!,
+    deleteUser(id: ID!): String!,
+    addCandy(name: String, tags: [String], links: [String]): Candy,
+    updateCandy(id: ID!, name: String, tags: [String], links: [String]): Candy,
+    deleteCandy(id: ID!): String!
+}
