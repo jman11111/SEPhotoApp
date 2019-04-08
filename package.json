@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "apollo-server-express": "^2.4.8",
+    "bootstrap": "^4.1.1",
     "express": "^4.16.4",
+    "font-awesome": "^4.7.0",
     "graphql": "^14.2.0",
     "graphql-import": "^0.7.1",
     "mongoose": "^5.4.20"
