@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Search from './components/Search';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Search from "./components/Search";
+import Button from "./components/button";
 
 class App extends Component {
   render() {
-    return(
-      <Search />
+    return (
+      <React.Fragment>
+        <Search />
+      </React.Fragment>
     );
   }
 }

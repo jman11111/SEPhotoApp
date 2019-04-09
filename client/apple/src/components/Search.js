@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "./button";
 
 class Search extends Component {
   state = {
@@ -19,7 +20,7 @@ class Search extends Component {
           ref={input => (this.search = input)}
           onChange={this.handleInputChange}
         />
-        <button className="btn btn-danger btn-sm">GO!</button>
+        <Button />
         <p>{this.state.query}</p>
       </form>
     );
