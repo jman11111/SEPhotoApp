@@ -5,10 +5,8 @@ import gql from 'graphql-tag'
 
 const FEED_QUERY = gql`
   {
-    findCandy(cname: "Pez"){
-        Candy{
-            links
-        }
+    findCandy(cname: "Crunch Bar"){
+      name
     }
   }
 `
@@ -21,11 +19,12 @@ class LinkList extends Component {
                 if (loading) return <div>Fetching</div>
                 if (error) return <div>Error</div>
     
-            const linksToRender = data.Candy
+            const linksToRender = data.findCandy
+            console.log(linksToRender);
 
             return (
                 <div>
-                    {linksToRender.map(link => <Link url={link.links[0]} />)}
+                    {linksToRender.map(link => <Link url={link.name} />)}
                 </div>
             )
             }}
