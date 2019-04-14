@@ -36,7 +36,7 @@ updateCandy = async(parent,args) => {
 }
 
 deleteCandy = async(parent,args) => {
-    candyModel.deleteOne({ cid: args.id}, function (err) {
+    candyModel.deleteOne({ name: args.name}, function (err) {
         if (err) return handleError(err);
     });
     return "deleted";
