@@ -35,6 +35,8 @@ class Login extends Component {
         />
         <Button variant="outline-secondary">GO</Button>
         <br />
+        <b>OR</b>
+        <br />
         <Button variant="outline-primary">Sign Up</Button>
       </div>
     );
