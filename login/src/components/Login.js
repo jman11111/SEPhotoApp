@@ -33,8 +33,9 @@ class Login extends Component {
           ref={input => (this.password = input)}
           onChange={this.handleInputChange}
         />
+        <Button variant="outline-secondary">GO</Button>
         <br />
-        <Button variant="outline-primary">GO</Button>
+        <Button variant="outline-primary">Sign Up</Button>
       </div>
     );
   }
