@@ -33,16 +33,18 @@ class Candycard extends React.Component {
 
             <Card className={classes.card}>
                 <CardHeader className={classes.title}
-                    title="Candy Name"
+                    title = {this.props.name}
+                    //title="Candy Name"
                 />
 
                 <CardMedia
                     className={classes.media}
-                    image="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg"
+                    image = {this.props.imageurl}
+                    //image="https://pics.drugstore.com/prodimg/597179/900.jpg"
                 />
 
                 <CardActions className={classes.actions} >
-                    <Button href="https://www.google.com" size="small" color="primary">
+                    <Button href={this.props.buyurl} size="small" color="primary">
                         Buy
                     </Button>
                 </CardActions>
