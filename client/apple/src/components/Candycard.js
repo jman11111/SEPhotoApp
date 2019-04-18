@@ -11,9 +11,15 @@ const styles = theme => ({
     card: {
         maxWidth: 400,
     },
+    title: {
+
+    },
     media: {
         height: 10,
         paddingTop: '56.25%', // 16:9
+    },
+    actions: {
+        paddingLeft: 150,
     },
 });
 
@@ -26,7 +32,7 @@ class Candycard extends React.Component {
         return (
 
             <Card className={classes.card}>
-                <CardHeader
+                <CardHeader className={classes.title}
                     title="Candy Name"
                 />
 
@@ -35,7 +41,7 @@ class Candycard extends React.Component {
                     image="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg"
                 />
 
-                <CardActions>
+                <CardActions className={classes.actions} >
                     <Button href="https://www.google.com" size="small" color="primary">
                         Buy
                     </Button>

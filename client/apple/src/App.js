@@ -8,8 +8,11 @@ class App extends Component {
 
   render() {
     return (
-      <Tagform/>,
+
       <Candycard/>
+      //<Candycard/>,
+      //<Candycard/>,
+      //<Candycard/>
     )
   }
 }
