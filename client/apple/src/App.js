@@ -8,8 +8,9 @@ class App extends Component {
 
   render() {
     return (
-        <Candycard name={"Candy"} imageurl={"https://pics.drugstore.com/prodimg/597179/900.jpg"} buyurl={"https://www.google.com"}/>
-    )
+        <Candycard name={"Sour Patch Kids Strawberry"} imageurl={"https://pics.drugstore.com/prodimg/597179/900.jpg"} buyurl={"//" + "www.google.com"}/>
+
+  )
   }
 }
 
