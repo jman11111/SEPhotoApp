@@ -10,7 +10,7 @@ const styles = theme => ({
         maxWidth: 400,
     },
     media: {
-        height: 0,
+        height: 10,
         paddingTop: '56.25%', // 16:9
     },
 });
@@ -23,12 +23,14 @@ class Candycard extends React.Component {
 
             <Card className={classes.card}>
                 <CardHeader
-                    title="Candy"
+                    title="Candy Name"
                 />
+
                 <CardMedia
                     className={classes.media}
-                    image="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwig4aPxwdrhAhU1On0KHdwbCa8QjRx6BAgBEAU&url=https%3A%2F%2Funsplash.com%2Fsearch%2Fphotos%2Fcats&psig=AOvVaw0a3tSEhBNtuZn9_POOVD9L&ust=1555706879088953"
+                    image="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg"
                 />
+
             </Card>
         );
     }
