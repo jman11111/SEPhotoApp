@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Link from './Links'
 import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
+import Candycard from './Candycard'
 
 function Linklist(props) {
   const FEED_QUERY = props.FEED_QUERY;
@@ -9,6 +10,8 @@ function Linklist(props) {
   {
     findCandybyTag(tag: "${FEED_QUERY}"){
       name
+      tags
+      links
     }
   }
 `
@@ -23,7 +26,7 @@ function Linklist(props) {
 
         return (
             <div>
-                {namesToRender.map(link => <Link url={link.name} />)}
+                {namesToRender.map(link => <Candycard name={link.name} imageurl={"https://i.imgur.com/JcUo7Hb.jpg"} buyurl={`${link.links[0]}`}/>)}
             </div>
         )
         }}
