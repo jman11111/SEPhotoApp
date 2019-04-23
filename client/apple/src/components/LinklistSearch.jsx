@@ -3,11 +3,11 @@ import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
 import Candycard from './Candycard'
 
-function Linklist(props) {
+function LinklistSearch(props) {
   const FEED_QUERY = props.FEED_QUERY;
   const ACTUAL_QUERY = gql`
   {
-    findCandybyTag(tag: "${FEED_QUERY}"){
+    findCandy(cname: "${FEED_QUERY}"){
       name
       tags
       links
@@ -20,7 +20,7 @@ function Linklist(props) {
             if (loading) return <div>Fetching</div>
             if (error) return <div>Error</div>
 
-        const namesToRender = data.findCandybyTag
+        const namesToRender = data.findCandy
         console.log(namesToRender);
 
         return (
@@ -33,4 +33,4 @@ function Linklist(props) {
 )
 }
 
-export default Linklist
+export default LinklistSearch

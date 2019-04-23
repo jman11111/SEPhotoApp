@@ -1,15 +1,24 @@
 import React, { Component } from "react";
+import Button from "./button";
+import LinkListSearch from './LinklistSearch';
 
 class Search extends Component {
   state = {
-    query: ""
+    query: "",
+    subval: ""
   };
 
   handleInputChange = () => {
     this.setState({
       query: this.search.value
     });
+    console.log("HEHE")
   };
+
+  handleSubmit = () => {
+    this.setState({subval: this.search.value})
+    console.log("HAHA")
+  }
 
   render() {
     return (
@@ -19,8 +28,8 @@ class Search extends Component {
           ref={input => (this.search = input)}
           onChange={this.handleInputChange}
         />
-        <button className="btn btn-danger btn-sm">GO!</button>
-        <p>{this.state.query}</p>
+        <Button onclik={this.handleSubmit}/>
+        <LinkListSearch FEED_QUERY={this.state.query}/>
       </form>
     );
   }

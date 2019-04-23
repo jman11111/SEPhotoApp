@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Tagform from './components/Tagform'
+import Search from "./components/Search";
+import NavBar from "./components/navbar";
 
 class App extends Component {
 
   render() {
     return (
-      <Tagform/>
-    )
+      <React.Fragment>
+        <NavBar />
+        <Search />
+        <Tagform/>
+      </React.Fragment>
+    );
   }
 }
 
