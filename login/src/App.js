@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Login />
+        <body>
+          <Login />
+        </body>
+        <body>
+          <Signup />
+        </body>
       </div>
     );
   }

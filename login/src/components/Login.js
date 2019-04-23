@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Button from "react-bootstrap/Button";
+import Homescreen from "../resources/images/home.png";
+//import "./node_modules/bootstrap/js/src/button";
 
 class Login extends Component {
   state = {
@@ -15,10 +16,17 @@ class Login extends Component {
   };
 
   render() {
+    var sectionStyle = {
+      width: "100%",
+      height: "1280px",
+      backgroundImage: "url(" + Homescreen + ")"
+    };
+
     return (
       <div>
-        <h1>SWEETS</h1>
-        <label> Username </label>
+        <section style={sectionStyle} />
+        <h1 style={{ color: "blue" }}> SWEETS</h1>
+        <label style={{ color: "blue" }}> Username </label>
         <br />
         <input
           placeholder="Enter username here"
@@ -26,18 +34,18 @@ class Login extends Component {
           onChange={this.handleInputChange}
         />
         <br />
-        <label> Password </label>
+        <label style={{ color: "blue" }}> Password </label>
         <br />
         <input
           placeholder="Enter password here"
           ref={input => (this.password = input)}
           onChange={this.handleInputChange}
         />
-        <Button variant="outline-secondary">GO</Button>
+        <button variant="outline-secondary">GO</button>
         <br />
-        <b>OR</b>
+        <b style={{ color: "blue" }}>OR</b>
         <br />
-        <Button variant="outline-primary">Sign Up</Button>
+        <button variant="outline-primary">Sign Up</button>
       </div>
     );
   }
