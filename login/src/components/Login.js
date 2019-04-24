@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Signup from "./Signup";
 import Homescreen from "../resources/images/home.png";
 import Button from "react-bootstrap/Button";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Login extends Component {
   state = {

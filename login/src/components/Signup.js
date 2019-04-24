@@ -32,6 +32,7 @@ class Signup extends Component {
     return (
       <div>
         <section style={sectionStyle} />
+        <br />
         <label style={{ color: "rgb(242,161,164" }}> First Name </label>
         <input
           ref={input => (this.firstName = input)}
