@@ -8,11 +8,21 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <NavBar />
-        <Search />
-        <Tagform/>
+
+      <React.Fragment >
+          <body className={"CSSBackground"}/>
+            <div className={"CSSNavBar"}>
+                <NavBar />
+            </div>
+            <div className={"CSSSearch"}>
+                <Search />
+            </div>
+            <div className={"CSSTagform"}>
+                <Tagform/>
+            </div>
+
       </React.Fragment>
+
     );
   }
 }
