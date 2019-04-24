@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import Signup from "./Signup";
 import Homescreen from "../resources/images/home.png";
-//import "./node_modules/bootstrap/js/src/button";
+import Button from "react-bootstrap/Button";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Login extends Component {
   state = {
@@ -25,8 +27,8 @@ class Login extends Component {
     return (
       <div>
         <section style={sectionStyle} />
-        <h1 style={{ color: "blue" }}> SWEETS</h1>
-        <label style={{ color: "blue" }}> Username </label>
+        <h1 style={{ color: "rgb(201,124,242)" }}> SWEETS</h1>
+        <label style={{ color: "rgb(201,124,242)" }}> Username </label>
         <br />
         <input
           placeholder="Enter username here"
@@ -34,18 +36,31 @@ class Login extends Component {
           onChange={this.handleInputChange}
         />
         <br />
-        <label style={{ color: "blue" }}> Password </label>
+        <label style={{ color: "rgb(201,124,242)" }}> Password </label>
         <br />
         <input
           placeholder="Enter password here"
           ref={input => (this.password = input)}
           onChange={this.handleInputChange}
         />
-        <button variant="outline-secondary">GO</button>
+        <Button
+          type="button"
+          class="btn btn-primary btn-md"
+          onClick=""
+          style={{ color: "rgb(201,124,242)" }}
+        >
+          GO
+        </Button>
         <br />
-        <b style={{ color: "blue" }}>OR</b>
+        <b style={{ color: "rgb(201,124,242)" }}>OR</b>
         <br />
-        <button variant="outline-primary">Sign Up</button>
+        <Button
+          type="button"
+          class="btn btn-primary btn-md"
+          style={{ color: "rgb(201,124,242)" }}
+        >
+          Sign Up
+        </Button>
       </div>
     );
   }
