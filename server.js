@@ -4,7 +4,6 @@ var { buildSchema } = require('graphql');
 var { importSchema } = require('graphql-import');
 const typeDefs = importSchema('./src/schema.graphql');
 const app = express()
-const port = 3000
 var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/myapp', {useNewUrlParser: true}).catch((err)=>{
