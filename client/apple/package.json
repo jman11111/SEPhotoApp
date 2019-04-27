@@ -30,5 +30,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+
+    "react-test-renderer": "^16.8.6"
+  }
 }
